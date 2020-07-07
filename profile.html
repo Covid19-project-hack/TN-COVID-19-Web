@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        form {
+            margin: 10% 20%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <div class="form-group">
+            <label>First Name</label>
+            <input class="form-control" type="text" placeholder="" id="fname">
+            <label>Email</label>
+            <input class="form-control" type="email" placeholder="" id="email">
+            <label>Phone Number</label>
+            <input class="form-control" type="text" placeholder="" id="phno">
+            <label>Address</label>
+            <textarea class="form-control" placeholder="" id="address" cols="15" rows="4"></textarea>
+            <label>City</label>
+            <input class="form-control" type="text" placeholder="" id="city">
+            <label>State</label>
+            <input class="form-control" type="text" placeholder="" id="state">
+
+        </div>
+        <button class="btn btn-primary" type="button" onclick="getInputValue();">Submit</button>
+
+    </form>
+
+
+    <script>
+        function getInputValue() {
+
+            var fName = document.getElementById("fname").value;
+            alert(fName);
+        }
+    </script>
+</body>
+
+</html>
