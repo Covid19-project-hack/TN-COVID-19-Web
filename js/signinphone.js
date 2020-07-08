@@ -54,7 +54,7 @@ function codeVerify() {
     .then(function (result) {
       console.log("registered");
       var user = result.user;
-      window.location = "index.html";
+      window.location = "profile.html";
     })
     .catch(function (error) {
       console.log(error.message);
