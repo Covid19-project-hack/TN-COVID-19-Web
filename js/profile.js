@@ -28,6 +28,7 @@ uid="";
             uid = firebaseUser.uid;
             var ref = firebase.database().ref().child("Users").child(uid);
             // document.getElementById("name").value = ref.child()
+            console.log(uid);
             ref.once('value', function(snapshot) {
                 console.log(snapshot.val());
                 if (snapshot.val()!==null){
@@ -82,4 +83,5 @@ function getInputValue() {
     console.log(object); 
     var ref = firebase.database().ref().child("Users").child(uid);
     ref.set(object);
+    window.location= "index.html";
  }
